@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+{% load static %}
+
+
+{% block title %}
+    About page
+{% endblock title %}
+
+{% block content %}
+<div class="about-section">
+    <div class="container">
+        <div class="contain-contain">
+            <div class="center hero-cont">
+                <p class="about center white-text">About Us</p>
+                <h2 class="white-text">Welcome to <span class="green-text">Leads Website</span> </h2>
+                <p class="center para-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Impedit corporis labore architecto inventore? Quam placeat nulla dolore quis 
+                    molestias veritatis rem magni, quos sint iure excepturi provident dolorem 
+                </p>
+                <div class="btn btnnn">
+                    <a href="/" class="white-text">Explore More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="main-container">
+    <div class="center width-cont">
+        <p class="about center green-text">Our rooms</p>
+        <h2 class="black-text font-text-h2">Explore Our Rooms</h2>
+
+        <div class="row ">
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image cardImage">
+                        <img src="{% static 'images/bed1.jpg' %}">
+                        {% comment %} <span class="card-title">Card Title</span> {% endcomment %}
+                        <a class="btn btn-floating halfway-fab waves-effect waves-light green"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content card-flex">
+                        <div class="h4-text">
+                            <h4 class="junior flow-text">Junior Suite</h4>
+                        </div>
+                        <div class="ion-icon">
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                       </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image cardImage">
+                        <img src="{% static 'images/bed2.jpg' %}">
+                        {% comment %} <span class="card-title">Card Title</span> {% endcomment %}
+                        <a class="btn btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content card-flex">
+                        <div class="h4-text">
+                            <h4 class="junior flow-text">Junior Suite</h4>
+                        </div>
+                        <div class="ion-icon">
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col s12 m6 l4">
+                <div class="card">
+                    <div class="card-image cardImage">
+                        <img src="{% static 'images/bed3.jpg' %}">
+                        {% comment %} <span class="card-title">Card Title</span> {% endcomment %}
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                    </div>
+                    <div class="card-content card-flex">
+                        <div class="h4-text">
+                            <h4 class="junior flow-text">Junior Suite</h4>
+                        </div>
+                        <div class="ion-icon">
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                            <i class="material-icons star">star</i>
+                        </div>
+                    </div>
+                    
+                    <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+

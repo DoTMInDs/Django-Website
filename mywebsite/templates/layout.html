@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+   
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+  </head>
+  <body>
+    <nav class="col bg-change-nav">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="" class="brand-logo black-text">
+            <i class="material-icons green-text">cloud</i>Logo
+          </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+            ><i class="material-icons black-text">menu</i></a
+          >
+          <ul id="nav-mobile" class="hide-on-med-and-down right navlinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          
+          <a href="#" id="login" class="black-text bg-hover-person"
+            ><i class="material-icons green-text">person</i>sign-up</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+
+    <div class="content">{% block content %} {% endblock content %}</div>
+
+    {% comment %}
+    <footer class="bg-change-footer">
+      <div>
+        <div class="center white-text">
+          &copy; All rights reserved. Design By DotMont
+        </div>
+      </div>
+    </footer>
+    {% endcomment %}
+
+    <script src="{% static 'js/main.js' %}"></script>
+    <!-- Compiled and minified JavaScript -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+  </body>
+</html>

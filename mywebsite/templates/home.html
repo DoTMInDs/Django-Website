@@ -1,0 +1,227 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block title %}
+    Home page
+{% endblock title %}
+
+{% block content %}
+        <div class="container">
+            <div class="container-contain slider" id="slideImage" onload="slider()">
+                <div class="content-flex">
+                    <h2 class="white-text h2-text">Discover a Brand Luxurious <br> Hotel</h2>
+                    <div class=" btn green">
+                        <a href="/hotel" class="white-text">Hotels</a>
+                    </div>
+                    <div class="btn green">
+                        <a href="/about" class="white-text">Book A Lead</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-bg-cons">
+            <div class="container">
+                <div class="row">
+                    <div class="popular-sec">
+                        <h3 class="popular-text flow-text center">Popular hotels</h3>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card hover">
+                            <div class="card-image">
+                                <img src="{% static "images/backgorund3.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Kempiski Hotel</h4>
+                                <p class="cash green-text">$150</p>
+                            </div>
+                            <p class="name">Greater Accra, Ghana</p>    
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{% static "images/room.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Lancaster Hotel</h4>
+                                <p class="cash green-text">$250</p>
+                            </div>
+                            <p class="name">Greater Accra, Ghana</p>    
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{% static "images/backgorund2.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Mascort Hotel</h4>
+                                <p class="cash green-text">$50</p>
+                            </div>
+                            <p class="name">Dansoman-Accra, Ghana</p>    
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{% static "images/backgorund3.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Kempiski Hotel</h4>
+                                <p class="cash green-text">$150</p>
+                            </div>
+                            <p class="name">Greater Accra, Ghana</p>    
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{% static "images/room.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Kempiski Hotel</h4>
+                                <p class="cash green-text">$150</p>
+                            </div>
+                            <p class="name">Greater Accra, Ghana</p>    
+                        </div>
+                    </div>
+    
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="{% static "images/backgorund2.jpg" %}" alt="">
+                            </div>
+                            <div class="card-content card-hotel-flexs">
+                                <h4 class="kemp-h4">Kempiski Hotel</h4>
+                                <p class="cash green-text">$150</p>
+                            </div>
+                            <p class="name">Greater Accra, Ghana</p>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-bg-con">
+            <div class="container">
+                <div class="row">
+                    <div class="popular-sec">
+                        <h3 class="popular-text flow-text center">What our Client say</h3>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="circleImage center">
+                                <img src="{% static "images/bed1.jpg" %}" alt="" class="circle center">
+                            </div>
+                            <div class="card-content">
+                                <p class="lorem center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                     aperiam nulla, iste expedita, 
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="circleImage center">
+                                <img src="{% static "images/bed2.jpg" %}" alt="" class="circle center">
+                            </div>
+                            <div class="card-content">
+                                <p class="lorem center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                     aperiam nulla, iste expedita, 
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m6 l4">
+                        <div class="card">
+                            <div class="circleImage center">
+                                <img src="{% static "images/bed3.jpg" %}" alt="" class="circle center">
+                            </div>
+                            <div class="card-content">
+                                <p class="lorem center">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                     aperiam nulla, iste expedita, 
+                                   </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock content %} 
+
+{% comment %} 
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+</head>
+<body onload="slider()">
+    <div class="header">
+        <div class="slider">
+            <img src="{% static '/images/backgorund3.jpg' %}" alt="" id="slideImage">
+        </div>
+        <div class="container-overlay">
+            <div class="bg-change-nav">
+                <div class="nav-wrapper">
+                  <a href="" class="brand-logo left">
+                    <i class="material-icons">cloud</i>
+                    Logo
+                  </a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                  </ul>
+
+                  <div class="log">
+                    <a href="#" class="right " id="login">
+                        <i class="material-icons">person</i>
+                        Login
+                      </a>
+                  </div>
+                  <a href="#" class="right menu-active" id="mobile-menu">
+                    <i class="material-icons">menu</i>
+                  </a>
+                </div>
+            </div>
+      
+            <div class="home-section">
+                <div class="container">
+                    <div class="container-contain">
+                        <h2 class="black-text">Discover a Brand <br> Luxurious Hotel</h2>
+                        <div class="center ">
+                            <div class=" btn">
+                                <a href="/hotel" class="white-text">Hotels</a>
+                            </div>
+                            <div class="btn btnn">
+                                <a href="/about" class="white-text">Book A Lead</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          
+        </div>
+    </div>
+
+   
+    
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html> {% endcomment %}
